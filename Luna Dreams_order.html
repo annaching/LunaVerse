@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon_logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/dreams_order_style.css">
+    <title>Luna Dreams_order</title>
+</head>
+
+<body>
+    <!----- Header ----->
+    <header>
+        <div class="header">
+            <a href="index.html"><img src="img/logo_L_balck.svg" alt="logo_L"></a>
+            <ul>
+                <li><a href="Luna Plan.html">Luna Plan</a></li>
+                <li><a href="Luna Dreams.html">Luna Dreams</a></li>
+                <li><a href="Planet.html">Planet</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </div>
+        <!-- Nav -->
+        <nav class="nav">
+            <h1>探索商店</h1>
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="-0.5" y="-0.5" width="39" height="39" rx="19.5"
+                                transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 43 43)" fill="white"
+                                stroke="currentColor" />
+                            <path
+                                d="M19.5 18.5C19.5 20.981 21.519 23 24 23C26.481 23 28.5 20.981 28.5 18.5C28.5 16.019 26.481 14 24 14C21.519 14 19.5 16.019 19.5 18.5ZM32 33H33V32C33 28.141 29.859 25 26 25H22C18.14 25 15 28.141 15 32V33H32Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="-0.5" y="-0.5" width="39" height="39" rx="19.5"
+                                transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 43 43)" fill="white"
+                                stroke="currentColor" />
+                            <g clip-path="url(#clip0_209_1595)">
+                                <path d="M16.5 28L29.5 28L32 18L14 18L16.5 28Z" fill="currentColor" />
+                                <path d="M34.5 15L32.75 15L32 18M32 18L29.5 28L16.5 28L14 18L32 18Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M29.5 33C28.6716 33 28 32.3284 28 31.5C28 30.6716 28.6716 30 29.5 30C30.3284 30 31 30.6716 31 31.5C31 32.3284 30.3284 33 29.5 33Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M16.5 33C15.6716 33 15 32.3284 15 31.5C15 30.6716 15.6716 30 16.5 30C17.3284 30 18 30.6716 18 31.5C18 32.3284 17.3284 33 16.5 33Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_209_1595">
+                                    <rect width="24" height="24" fill="white"
+                                        transform="matrix(-1 -1.19249e-08 -1.19249e-08 1 36 12)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ----- Main ------>
+    <div class="main">
+        <h1>Luna Dreams 方案</h1>
+        <h2>Luna 為確保每位太空旅客的權益，訂購人僅以本人報名。航程完整內容請詳見 <a href="Luna Plan.html">Luna Plan</a>，若有需求或其他疑問，請來信客服信箱 <a
+                href="mailto:luna@lunaverse.com">luna@lunaverse.com</a>。</h2>
+        <ul>
+            <li><i class="fa-solid fa-circle-check"></i>Step1.選擇登陸地點</li>
+            <li><i class="fa-solid fa-circle-check"></i>Step2.填寫資訊</li>
+            <li><i class="fa-solid fa-circle-check"></i>Step3.前往付款</li>
+        </ul>
+    </div>
+
+    <!-- ------Order------- -->
+    <div class="container">
+        <div class="ordercontent">
+            <!-- ---------User-info-------- -->
+            <div class="order-cont">
+                <div class="user-info">
+                    <h1>訂購人資料</h1>
+                    <form id="userInfo">
+                        <div>
+                            <label>中文姓名<span class="required">*</span></label>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="請填入姓名">
+                        </div>
+                        <div>
+                            <label>性別</label>
+                            <br>
+                            <input type="radio" name="gender" id="male">男性
+                            <input type="radio" name="gender" id="female">女性
+                        </div>
+                        <div>
+                            <label>身分證號碼<span class="required">*</span></label>
+                            <br>
+                            <input type="text" name="id" id="id" placeholder="請填入身分證號碼">
+                        </div>
+                        <div>
+                            <label>護照姓名(英文)<span class="required">*</span></label>
+                            <br>
+                            <input type="text" name="id" id="id" placeholder="請填入護照姓名">
+                        </div>
+                        <div>
+                            <label>手機號碼<span class="required">*</span></label>
+                            <br>
+                            <select>
+                                <option>+886</option>
+                            </select>
+                            <input type="number" name="cellphone" id="cellphone" placeholder="請填入手機後 8 碼">
+                        </div>
+                        <div>
+                            <label>E-mail<span class="required">*</span></label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="請填入e-mail">
+                        </div>
+                        <div>
+                            <label>地址</label>
+                            <br>
+                            <select>
+                                <option>臺灣</option>
+                            </select>
+                            <select>
+                                <option>縣市</option>
+                            </select>
+                            <select>
+                                <option>地區</option>
+                            </select>
+                            <br>
+                            <input class="input-long" type="text" name="add" id="add" placeholder="請填入地址">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="user-pay">
+                    <h1>付款方式</h1>
+                    <form id="userPay">
+                        <div>
+                            <input type="radio" checked>信用卡一次付清
+                            <br>
+                            <div>
+                                <div class="credit-card">
+                                    <label>信用卡卡號（支援　<i class="fa-brands fa-cc-visa"></i> <i
+                                            class="fa-brands fa-cc-mastercard"></i>
+                                        <i class="fa-brands fa-cc-jcb"></i>）<span class="required">*</span></label>
+                                    <br>
+                                    <input placeholder="信用卡號">
+                                    <br>
+                                    <div class="card-security">
+                                        <div class="input-short">
+                                            <label>卡片到期日<span class="required">*</span>
+                                                <input placeholder="有效期限 MM/YY"></label>
+                                        </div>
+                                        <div class="input-short">
+                                            <label>安全識別碼<span class="required">*</span>
+                                                <input placeholder="CCV 末三碼"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <input type="radio">信用卡分期
+                            <br>
+                            <input type="radio">ATM 匯款或超商
+                        </div>
+                        <div class="invoice">
+                            <input type="radio" checked>電子發票
+                            <br>
+                            <input type="radio">捐贈發票
+                            <br>
+                            <input type="radio">統編發票(公司用)
+                        </div>
+                        <div>
+                            載具
+                            <select>
+                                <option>手機條碼</option>
+                            </select>
+                            <input placeholder="/載具手機號碼">
+                        </div>
+                        <div class="left-tol">
+                            <div class="subtotal">
+                                <span>小計</span>
+                                <span>NT$870,000</span>
+                            </div>
+                            <div class="total">
+                                <span>總計</span>
+                                <span>NT$870,000</span>
+                            </div>
+                        </div>
+                        <button class="btn-pay">確認付款</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- -------Receipt------- -->
+            <div class="receipt">
+                <h1>訂單摘要</h1>
+                <div class="ordertext">
+                    <div class="orderlist">
+                        <h2>第谷環形山（Tycho）</h2>
+                        <ul>
+                            <li>登月訓練</li>
+                            <li>參訪寧靜基地</li>
+                            <li>返航健康追蹤</li>
+                        </ul>
+                    </div>
+                    <div class="orderprice">NT$870,000
+                    </div>
+                </div>
+                <div class="totals">
+                    <div class="subtotal">
+                        <span>小計</span>
+                        <span>NT$870,000</span>
+                    </div>
+                    <div class="total">
+                        <span>總計</span>
+                        <span>NT$870,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr class="hr">
+        <div class="footer-contect">
+            <a href="index.html"><img class="ficon" src="img/logo_S.svg" alt="logo_S"></a>
+            <ul class="f_left">
+                <li><a href="#">Contact Luna</a>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="#">Follow Luna</a></li>
+                <ol class="f_brand">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ol>
+            </ul>
+
+            <ul class="f_right">
+                <li>Tel：+886-1-234-5678</li>
+                <li>Fax：+886-8-765-4321</li>
+                <li><span>Add：</span><span>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506
+                        , Taiwan
+                        (R.O.C.)</span>
+                </li>
+            </ul>
+        </div>
+        <p>COPYRIGHT © 2025 Luna All Right Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
