@@ -61,8 +61,8 @@
 
 
 .box-hr {
-    border: none;
-    border-top: 1px solid #B8B9C1;
+    border: 1px solid;
+    border-image: repeating-linear-gradient(90deg, #B8B9C1 0 10px, transparent 10px 20px) 10;
     width: 885px;
     margin: 40px auto;
 }
