@@ -6,208 +6,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon_logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/about_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/main.js"></script>
     <title>About</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <a href="index.html"><img src="img/logo_L_balck.svg" alt="logo_L"></a>
-        <ul>
-            <li><a href="Luna Plan.html">Luna Plan</a></li>
-            <li><a href="Luna Dreams_login.html">Luna Dreams</a></li>
-            <li><a href="Planet.html">Planet</a></li>
-            <li><a href="About.html">About</a></li>
-        </ul>
+    <header class="header" id="header">
+        <a class="headerLogo" href="index.html"><img class="hide_on_mobile" src="img/logo_L.svg" alt="logo_L"><img
+                class="hide_on_desktop" src="img/logo_S.svg"></a>
+        <span class="pageName">About</span>
+        <div class="header_nav">
+            <div class="hamburger" id="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <ul class="headerNav_list transition" id="headerNav_list">
+                <li class="headerNav_item"><a class="nav_link" href="Luna Plan.html">Luna Plan</a></li>
+                <li class="headerNav_item"><a class="nav_link" href="Luna Dreams_login.html">Luna Dreams</a>
+                </li>
+                <li class="headerNav_item"><a class="nav_link" href="Planet News.html">Planet News</a></li>
+                <li class="headerNav_item"><a class="nav_link  currentBtn" href="About.html">About</a></li>
+            </ul>
+        </div>
     </header>
+    <div class="hamburgerOverlay" id="hamburgerOverlay"></div>
 
-    <!-- sec-1 -->
-    <div class="sec-1">
-        <h1>探索無限 拓展未來</h1>
-        <h5>Luna Verse 是一支致力於推動人類探索月球與天體的組織團隊
-            <br><br>
-            我們相信，登月不再只是遙不可及的夢想，而是一個等待被理解、開拓的新世界
-            <br><br>
-            透過科學、技術與創新，我們為探索者打造通往月球的道路，讓每一位夢想家都能親身體驗星際冒險
-        </h5>
-    </div>
-
-
-    <!-- sec-2 -->
-    <div class="sec-2">
-        <h1>我們的使命</h1>
-        <div class="missionlist">
-            <h5>打造前所未有的太空探索體驗</h5>
-            <h6>讓普通人也能親身參與登月計畫</h6>
-        </div>
-        <div class="missionlist">
-            <h5>推動科技創新，突破航天極限</h5>
-            <h6>透過 AI、自動化與太空工程實現安全可行的登月方案</h6>
-        </div>
-        <div class="missionlist">
-            <h5>建立月球基地，探索宇宙奧秘</h5>
-            <h6>以月球為立基點重新觀測宇宙，開啟星際文明的可能</h6>
-        </div>
-        <div class="missionlist">
-            <h5>促進國際合作，共同迎接太空時代</h5>
-            <h6>連結各國航天機構與科研機構，共享科技進步</h6>
-        </div>
-    </div>
+    <div class="aboutWrapper">
+        <!-- section 1 -->
+        <section class="section1">
+            <h2 class="point mb_24">探索無限 拓展未來</h2>
+            <h5>Luna Verse 是一支致力於推動人類探索月球與天體的組織團隊
+                <br><br>
+                我們相信，登月不再只是遙不可及的夢想，而是一個等待被理解、開拓的新世界
+                <br><br>
+                透過科學、技術與創新，我們為探索者打造通往月球的道路，讓每一位夢想家都能親身體驗星際冒險
+            </h5>
+        </section>
 
 
-    <!-- sec-3 -->
-    <div class="sec-3">
-        <h1>核心團隊</h1>
-        <div class="groupcard">
-            <img src="img/group-1.png" alt="group-1">
-            <div class="card-content">
-                <div class="group-info">
-                    <h4>指揮與管理部門</h4>
-                    <h5>總指揮官：佐藤隆一（Ryuichi Sato）</h5>
-                    <h6>統籌計畫運作，確保各部門資源分配與決策的精確執行</h6>
-                </div>
-                <div class="worklist">
-                    <ul>
-                        <li>制定 Luna 計畫的發展策略與方向</li>
-                        <li>管理跨國合作與資源分配</li>
-                        <li>監督所有部門的執行進度與成果</li>
-                        <li>危機處理與風險評估</li>
-                        <li>協調各國政府與航天機構的合作</li>
-                    </ul>
+        <!-- section 2 -->
+        <section class="section2">
+            <h2 class="point mb_24">我們的使命</h2>
+            <ul class="missionlist">
+                <li>
+                    <h5 class="point">打造前所未有的太空探索體驗</h5>
+                    <h6>讓普通人也能親身參與登月計畫</h6>
+                </li>
+                <li>
+                    <h5 class="point">推動科技創新，突破航天極限</h5>
+                    <h6>透過 AI、自動化與太空工程實現安全可行的登月方案</h6>
+                </li>
+                <li>
+                    <h5 class="point">建立月球基地，探索宇宙奧秘</h5>
+                    <h6>以月球為立基點重新觀測宇宙，開啟星際文明的可能</h6>
+                </li>
+                <li>
+                    <h5 class="point">促進國際合作，共同迎接太空時代</h5>
+                    <h6>連結各國航天機構與科研機構，共享科技進步</h6>
+                </li>
+            </ul>
+        </section>
+
+        <!-- section 3 -->
+        <section class="section3">
+            <h2 class="point mb_24 tac">核心團隊</h2>
+            <div class="groupcard">
+                <img src="img/group-1.png" alt="group-1">
+                <div class="card-content">
+                    <div class="group-info">
+                        <h4 class="point">指揮與管理部門</h4>
+                        <h5>總指揮官：佐藤隆一（Ryuichi Sato）</h5>
+                        <h6>統籌計畫運作，確保各部門資源分配與決策的精確執行</h6>
+                    </div>
+                    <div class="worklist">
+                        <ul>
+                            <li>制定 Luna 計畫的發展策略與方向</li>
+                            <li>管理跨國合作與資源分配</li>
+                            <li>監督所有部門的執行進度與成果</li>
+                            <li>危機處理與風險評估</li>
+                            <li>協調各國政府與航天機構的合作</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="groupcard">
-            <div class="card-content">
-                <div class="group-info">
-                    <h4>科學研究與探索部</h4>
-                    <h5>首席科學家：艾瑪·卡特（Emma Carter）</h5>
-                    <h6>研究月球環境、資源及天文現象，為人類的天體探索提供科學依據</h6>
+            <div class="groupcard">
+                <div class="card-content">
+                    <div class="group-info">
+                        <h4 class="point">科學研究與探索部</h4>
+                        <h5>首席科學家：艾瑪·卡特（Emma Carter）</h5>
+                        <h6>研究月球環境、資源及天文現象，為人類的天體探索提供科學依據</h6>
+                    </div>
+                    <div class="worklist">
+                        <ul>
+                            <li>研究月球地質、礦物資源與可利用性</li>
+                            <li>開發太空生存能源與未來居住計畫</li>
+                            <li>進行天體探索與望遠鏡觀測</li>
+                            <li>與全球科研機構合作，分享研究成果</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="worklist">
-                    <ul>
-                        <li>研究月球地質、礦物資源與可利用性</li>
-                        <li>開發太空生存能源與未來居住計畫</li>
-                        <li>進行天體探索與望遠鏡觀測</li>
-                        <li>與全球科研機構合作，分享研究成果</li>
-                    </ul>
+                <img src="img/group-2.png" alt="group-2">
+            </div>
+            <div class="groupcard">
+                <img src="img/group-3.png" alt="group-3">
+                <div class="card-content">
+                    <div class="group-info">
+                        <h4 class="point">太空訓練與人員培育部</h4>
+                        <h5>訓練總監：伊凡·彼得羅夫（Ivan Petrov）</h5>
+                        <h6>培養具備專業知識與高適應能力的宇航員，確保其勝任極端環境下的各種挑戰</h6>
+                    </div>
+                    <div class="worklist">
+                        <ul>
+                            <li>設計宇航員體能與心理適應訓練計畫</li>
+                            <li>執行模擬登月與應急操作測試</li>
+                            <li>提供航天器操作與科學實驗相關技能訓練</li>
+                            <li>研究並優化人類在太空長期生活的生存策略</li>
+                            <li>推動大眾航天教育與未來宇航員培育計畫</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <img src="img/group-2.png" alt="group-2">
-        </div>
-        <div class="groupcard">
-            <img src="img/group-3.png" alt="group-3">
-            <div class="card-content">
-                <div class="group-info">
-                    <h4>太空訓練與人員培育部</h4>
-                    <h5>訓練總監：伊凡·彼得羅夫（Ivan Petrov）</h5>
-                    <h6>培養具備專業知識與高適應能力的宇航員，確保其勝任極端環境下的各種挑戰</h6>
+            <div class="groupcard">
+                <div class="card-content">
+                    <div class="group-info">
+                        <h4 class="point">碳基實驗與醫療部</h4>
+                        <h5>醫學總監：路易斯·加西亞（Luis García）</h5>
+                        <h6>研究碳基生物處外太空環境的適應性，並探索生存的可能</h6>
+                    </div>
+                    <div class="worklist">
+                        <ul>
+                            <li>研究碳基生物在微重力與天體輻射環境下的變化</li>
+                            <li>開發適應月球環境的農業技術，測試植物生長條件</li>
+                            <li>設計並執行宇航員健康維護與醫療支持計畫</li>
+                            <li>提供登月前後的身心復健計畫，確保宇航員長期適應性</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="worklist">
-                    <ul>
-                        <li>設計宇航員體能與心理適應訓練計畫</li>
-                        <li>執行模擬登月與應急操作測試</li>
-                        <li>提供航天器操作與科學實驗相關技能訓練</li>
-                        <li>研究並優化人類在太空長期生活的生存策略</li>
-                        <li>推動大眾航天教育與未來宇航員培育計畫</li>
-                    </ul>
+                <img src="img/group-4.png" alt="group-4">
+            </div>
+            <div class="groupcard">
+                <img src="img/group-5.png" alt="group-5">
+                <div class="card-content">
+                    <div class="group-info">
+                        <h4 class="point">航天工程與通訊數據部</h4>
+                        <h5>首席工程師：艾莉森·克羅弗特（Allison Croft）</h5>
+                        <h6>開發航天技術，確保航天器安全、通訊暢通，維護月球基地的建設</h6>
+                    </div>
+                    <div class="worklist">
+                        <ul>
+                            <li>設計與優化 Luna 航天器及登月設備</li>
+                            <li>研發天體通訊技術與高效數據傳輸系統</li>
+                            <li>建設並維護月球基地的基礎設施與能源管理</li>
+                            <li>研究新一代航天推進技術，提升星際旅行效率</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="groupcard">
-            <div class="card-content">
-                <div class="group-info">
-                    <h4>碳基實驗與醫療部</h4>
-                    <h5>醫學總監：路易斯·加西亞（Luis García）</h5>
-                    <h6>研究碳基生物處外太空環境的適應性，並探索生存的可能</h6>
-                </div>
-                <div class="worklist">
-                    <ul>
-                        <li>研究碳基生物在微重力與天體輻射環境下的變化</li>
-                        <li>開發適應月球環境的農業技術，測試植物生長條件</li>
-                        <li>設計並執行宇航員健康維護與醫療支持計畫</li>
-                        <li>提供登月前後的身心復健計畫，確保宇航員長期適應性</li>
-                    </ul>
-                </div>
+        </section>
+
+        <!-- section 4 -->
+        <section class="section4">
+            <h2 class="point mb_24">我們的價值觀</h2>
+            <div class="box_1">
+                <span>人類的好奇心與挑戰精神是推動文明進步的核心</span>
+                <span class="hide_on_mobile">Luna Verse</span>
+                <span>結合全球科學家、工程師、航天專家，共同實現登月夢想</span>
             </div>
-            <img src="img/group-4.png" alt="group-4">
-        </div>
-        <div class="groupcard">
-            <img src="img/group-5.png" alt="group-5">
-            <div class="card-content">
-                <div class="group-info">
-                    <h4>航天工程與通訊數據部</h4>
-                    <h5>首席工程師：艾莉森·克羅弗特（Allison Croft）</h5>
-                    <h6>開發航天技術，確保航天器安全、通訊暢通，維護月球基地的建設</h6>
-                </div>
-                <div class="worklist">
-                    <ul>
-                        <li>設計與優化 Luna 航天器及登月設備</li>
-                        <li>研發深空通訊技術與高效數據傳輸系統</li>
-                        <li>建設並維護月球基地的基礎設施與能源管理</li>
-                        <li>監控航天器運行狀況，進行技術維護與升級</li>
-                        <li>研究新一代航天推進技術，提升星際旅行效率</li>
-                    </ul>
-                </div>
+            <img class="hide_on_mobile" src="img/about-sec4.png" alt="about-sec4">
+            <img class="hide_on_desktop" src="img/about-sec4_1.png" alt="about-sec4_1">
+            <div class="box_2">
+                <span>以長遠視角規劃，確保太空資源的有效利用與環境保護</span>
+                <span>以科技為核心，持續突破工程與物理的限制，讓登月成為現實</span>
             </div>
-        </div>
-    </div>
-    <!-- sec-4 -->
-    <div class="sec-4">
-        <h1>我們的價值觀</h1>
-        <div class="box-1">
-            <span>人類的好奇心與挑戰精神是推動文明進步的核心</span>
-            <span>Luna Verse</span>
-            <span>結合全球科學家、工程師、航天專家，共同實現登月夢想</span>
-        </div>
-        <img src="img/about-sec4.png" alt="about-sec4">
-        <div class="box-2">
-            <span>以長遠視角規劃，確保太空資源的有效利用與環境保護</span>
-            <span>以科技為核心，持續突破工程與物理的限制，讓登月成為現實</span>
-        </div>
-    </div>
-    <!-- sec-5 -->
-    <div class="sec-5">
-        <h1>加入我們 一同啟航</h1>
-        <h5>Luna 不僅是一個計畫，更是一場屬於全人類的夢想實現之旅
-            <br>我們邀請你一起見證歷史
-            <br>以月球為立足點，窺探這宇宙的部分面貌
-            <br>為未來世代開啟無限的可能
-        </h5>
-        <a href="#">加入 Luna 團隊</a>
+        </section>
+
+        <!-- section 5 -->
+        <section class="section5">
+            <h2 class="point mb_24">加入我們 一同啟航</h2>
+            <h5 class="mb_24">Luna 不僅是一個計畫，更是一場屬於全人類的夢想實現之旅
+                <br>我們邀請你一起見證歷史
+                <br>以月球為立足點，窺探這宇宙的部分面貌
+                <br>為未來世代開啟無限的可能
+            </h5>
+            <a class="primaryBtn" href="#">加入 Luna 團隊</a>
+        </section>
     </div>
 
+    <div class="to_topBtn">
+        <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="40" height="40" rx="20" transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 44 44)"
+                    fill="white" />
+                <path d="M31.0003 26.929L23.9292 19.8579L16.8581 26.929" stroke="#000A1E" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+    </div>
     <!-- Footer -->
     <footer>
-        <hr class="hr">
-        <div class="footer-contect">
-            <a href="index.html"><img class="ficon" src="img/logo_S.svg" alt="logo_S"></a>
-            <ul class="f_left">
-                <li><a href="#">Contact Luna</a>
-                <li><a href="#">Join Us</a></li>
-                <li><a href="#">Follow Luna</a></li>
-                <ol class="f_brand">
+        <hr class="footer_hr">
+        <div class="footer_contect">
+            <a href="index.html"><img class="footer_logo" src="img/logo_S.svg" alt="logo_S"></a>
+            <div class="footer_leftbox">
+                <ul class="footer_link">
+                    <li><a href="#">Contact Luna</a>
+                    <li class="hide_on_mobile"><a href="#">Join Us</a></li>
+                    <li class="hide_on_mobile"><a href="#">Follow Luna</a></li>
+                </ul>
+                <ol class="footer_brand">
                     <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                 </ol>
-            </ul>
+            </div>
 
-            <ul class="f_right">
+            <ul class="footer_rightbox hide_on_mobile" ">
                 <li>Tel：+886-1-234-5678</li>
                 <li>Fax：+886-8-765-4321</li>
-                <li><span>Add：</span><span>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506
-                        , Taiwan
-                        (R.O.C.)</span>
+                <li>Add：4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan（R.O.C.）
                 </li>
             </ul>
         </div>
-        <p>COPYRIGHT © 2025 Luna All Right Reserved.</p>
-
+        <p></p>
     </footer>
-
 </body>
 
 </html>

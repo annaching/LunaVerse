@@ -1,0 +1,1284 @@
+/* ------ index ------ */
+@media screen and (max-width: 930px) {
+
+    /* 土星 */
+    .planet:nth-child(1) {
+        top: 2%;
+        left: 50%;
+    }
+
+    .saturn {
+        width: 120px;
+    }
+
+    /* 海王星 */
+    .planet:nth-child(2) {
+
+        top: 10%;
+        left: 67%;
+    }
+
+    .neptune {
+        width: 75px;
+    }
+
+    /* 火星 */
+    .planet:nth-child(3) {
+        top: 4%;
+        left: 36%;
+    }
+
+    .mars {
+        width: 70px;
+    }
+
+    /* 天王星 */
+    .planet:nth-child(4) {
+        top: 27%;
+        left: 73%;
+    }
+
+    .uranus {
+        width: 80px;
+    }
+
+    /* 月亮 */
+    .planet:nth-child(5) {
+        top: 28%;
+        left: 33%;
+    }
+
+    .moon {
+        width: 250px;
+    }
+
+    /* 金星 */
+    .planet:nth-child(6) {
+        top: 12%;
+        left: 22%;
+    }
+
+    .venus {
+        width: 70px;
+    }
+
+    /* 地球 */
+    .planet:nth-child(7) {
+        top: 51%;
+        left: 16%;
+    }
+
+    .earth {
+        width: 75px;
+    }
+
+    /* 水星 */
+    .planet:nth-child(8) {
+        top: 29%;
+        left: 15%;
+    }
+
+    .mercury {
+        width: 72px;
+    }
+
+    /* 木星 */
+    .planet:nth-child(9) {
+        top: 50%;
+        left: 73%;
+    }
+
+    .jupiter {
+        width: 95px;
+    }
+
+    /* slogan */
+    .overlay {
+        top: -15px;
+    }
+
+    .section {
+        width: 640px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .planet-container {
+        height: 800px;
+    }
+
+    /* 土星 */
+    .saturn {
+        width: 90px;
+    }
+
+    /* 海王星 */
+    .neptune {
+        width: 65px;
+    }
+
+    /* 火星 */
+    .mars {
+        width: 65px;
+    }
+
+    /* 天王星 */
+    .uranus {
+        width: 65px;
+    }
+
+    /* 月亮 */
+    .planet:nth-child(5) {
+        top: 28%;
+        left: 34%;
+    }
+
+    .moon {
+        width: 200px;
+    }
+
+    /* 金星 */
+    .venus {
+        width: 65px;
+    }
+
+    /* 地球 */
+    .earth {
+        width: 65px;
+    }
+
+    /* 水星 */
+    .mercury {
+        width: 65px;
+    }
+
+    /* 木星 */
+    .jupiter {
+        width: 65px;
+    }
+
+    /* slogan */
+    .overlay {
+        top: -40px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .planet-container {
+        height: 600px;
+    }
+
+    /* 土星 */
+    .planet:nth-child(1) {
+        top: 2%;
+        left: 57%;
+    }
+
+    /* 海王星 */
+    .planet:nth-child(2) {
+        top: 17%;
+        left: 75%;
+    }
+
+    /* 火星 */
+    .planet:nth-child(3) {
+        top: 4%;
+        left: 33%;
+    }
+
+    /* 天王星 */
+    .planet:nth-child(4) {
+        top: 40%;
+        left: 75%;
+    }
+
+    /* 月亮 */
+    .planet:nth-child(5) {
+        top: 18%;
+        left: 35%;
+    }
+
+    /* 金星 */
+    .planet:nth-child(6) {
+        top: 19%;
+        left: 19%;
+    }
+
+    /* 地球 */
+    .planet:nth-child(7) {
+        top: 58%;
+        left: 33%;
+    }
+
+    /* 水星 */
+    .planet:nth-child(8) {
+        top: 41%;
+        left: 17%;
+    }
+
+    /* 木星 */
+    .planet:nth-child(9) {
+        top: 59%;
+        left: 58%;
+    }
+
+    /* slogan */
+    .overlay {
+        top: -100px;
+    }
+
+    .section {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .planet-container {
+        height: 400px;
+    }
+
+    /* 土星 */
+    .planet:nth-child(1) {
+        top: 2%;
+        left: 57%;
+    }
+
+    .saturn {
+        width: 55px;
+    }
+
+    /* 海王星 */
+    .planet:nth-child(2) {
+
+        top: 17%;
+        left: 75%;
+    }
+
+    .neptune {
+        width: 48px;
+    }
+
+    /* 火星 */
+    .planet:nth-child(3) {
+        top: 3%;
+        left: 33%;
+    }
+
+    .mars {
+        width: 48px;
+    }
+
+    /* 天王星 */
+    .planet:nth-child(4) {
+        top: 42%;
+        left: 76%;
+    }
+
+    .uranus {
+        width: 48px;
+    }
+
+    /* 月亮 */
+    .planet:nth-child(5) {
+        top: 19%;
+        left: 35%;
+    }
+
+    .moon {
+        width: 160px;
+    }
+
+    /* 金星 */
+    .planet:nth-child(6) {
+        top: 19%;
+        left: 17%;
+    }
+
+    .venus {
+        width: 48px;
+    }
+
+    /* 地球 */
+    .planet:nth-child(7) {
+        top: 65%;
+        left: 33%;
+    }
+
+    .earth {
+        width: 48px;
+    }
+
+    /* 水星 */
+    .planet:nth-child(8) {
+        top: 45%;
+        left: 15%;
+    }
+
+    .mercury {
+        width: 48px;
+    }
+
+    /* 木星 */
+    .planet:nth-child(9) {
+        top: 65%;
+        left: 58%;
+    }
+
+    .jupiter {
+        width: 48px;
+    }
+
+    /* slogan */
+    .overlay {
+        top: -48px;
+    }
+
+    .section {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    /* 土星 */
+    .planet:nth-child(1) {
+        top: 2%;
+        left: 59%;
+    }
+
+    .saturn {
+        width: 55px;
+    }
+
+    /* 海王星 */
+    .planet:nth-child(2) {
+
+        top: 17%;
+        left: 77%;
+    }
+
+    .neptune {
+        width: 48px;
+    }
+
+    /* 火星 */
+    .planet:nth-child(3) {
+        top: 3%;
+        left: 31%;
+    }
+
+    .mars {
+        width: 48px;
+    }
+
+    /* 天王星 */
+    .planet:nth-child(4) {
+        top: 46%;
+        left: 79%;
+    }
+
+    .uranus {
+        width: 48px;
+    }
+
+    /* 月亮 */
+    .planet:nth-child(5) {
+        top: 19%;
+        left: 32%;
+    }
+
+    .moon {
+        width: 160px;
+    }
+
+    /* 金星 */
+    .planet:nth-child(6) {
+        top: 19%;
+        left: 13%;
+    }
+
+    .venus {
+        width: 48px;
+    }
+
+    /* 地球 */
+    .planet:nth-child(7) {
+        top: 67%;
+        left: 31%;
+    }
+
+    .earth {
+        width: 48px;
+    }
+
+    /* 水星 */
+    .planet:nth-child(8) {
+        top: 47%;
+        left: 12%;
+    }
+
+    .mercury {
+        width: 48px;
+    }
+
+    /* 木星 */
+    .planet:nth-child(9) {
+        top: 65%;
+        left: 58%;
+    }
+
+    .jupiter {
+        width: 48px;
+    }
+
+    /* slogan */
+    .overlay {
+        top: -48px;
+    }
+
+    .section {
+        width: 365px;
+    }
+
+    .float_block img {
+        float: none;
+        width: 100%;
+        margin: 0 0 24px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .section {
+        width: 335px;
+    }
+}
+
+/* ------ Luna Plan ------ */
+@media screen and (max-width:1200px) {
+    .plan {
+        width: 700px;
+        margin: 72px auto 108px;
+    }
+
+
+    .plan ul {
+        list-style-type: disc;
+        margin: 16px 0 0 24px;
+    }
+
+    .plan img {
+        width: 90%;
+        margin: 32px auto 0;
+    }
+
+    .box-1 span {
+        font-size: 20px;
+    }
+
+    .txtline {
+        width: 375px;
+        height: 1px;
+        background-color: #A0A4B4;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .box-2 {
+        width: 700px;
+        margin-top: 24px;
+        line-height: 1.4;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+
+    .box-2 ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .line {
+        width: 1.5px;
+        height: 100px;
+        background-color: #E1C047;
+    }
+
+    /* NavSec */
+    .nav-sec {
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 2.5px solid #52535D;
+        padding-bottom: 12px;
+
+        position: sticky;
+        padding-top: 12px;
+        top: 60px;
+        background-color: #000A1E;
+        z-index: 999;
+    }
+
+    .nav-sec ul {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-sec ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    /* ---------Sec-1------------ */
+    .sec-1,
+    .sec-2,
+    .sec-3,
+    .sec-4 {
+        width: 95%;
+        margin: 64px auto 0;
+        padding: 40px 0;
+    }
+
+    .sec-1 h4,
+    .sec-3 h4,
+    .sec-4 h4 {
+        margin: 16px 0;
+    }
+
+    .sec-1 p,
+    .sec-3 p,
+    .sec-4 p {
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .sec-1 ul,
+    .sec-3 ul {
+        list-style-type: disc;
+    }
+
+    .sec-1 li,
+    .sec-3 li {
+        margin-left: 24px;
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    /* ---------Sec-2------------ */
+    .s2-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    /* ------左側list + img ------ */
+    .s2-box-1 {
+        width: 40%;
+    }
+
+    .s2-box-1 img {
+        width: 220px;
+
+    }
+
+    .left_list {
+        display: none;
+    }
+
+
+
+    /* -------右側說明-------- */
+
+    .s2-box-2 {
+        width: 50%;
+        border-top: 1px solid #C7CBDA;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #C7CBDA;
+    }
+
+    .s2-box-2 h2 {
+        font-size: 24px;
+        line-height: 140%;
+        margin: 16px 0;
+        text-align: center;
+    }
+
+    .s2-box-2 img {
+        display: block;
+        width: 300px;
+        height: 150px;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+
+    .s2-box-2 ul {
+        margin-top: 16px;
+        list-style-type: disc;
+    }
+
+    .s2-box-2 li {
+        line-height: 140%;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+    }
+
+    .btn a {
+        display: inline-block;
+        width: 235px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 140%;
+        text-align: center;
+        text-decoration: none;
+        background-color: #EEEEF0;
+        color: #262626;
+        padding: 8px;
+        border-radius: 20px;
+    }
+
+    .btn a:hover {
+        background-color: #000A1E;
+        color: #E1C047;
+    }
+
+    .btn a i {
+        margin-left: 8px;
+        font-size: 16px;
+    }
+
+    /* Sec-3 */
+
+    /* Sec-4 */
+    /* Q&A 手風琴 */
+    .accordion {
+        width: 516px;
+        padding: 4px;
+        margin: 20px 0;
+    }
+
+    .accordion_title {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding-bottom: 8px;
+        margin-top: 12px;
+    }
+
+    .accordion_icons {
+        border: 1.5px solid;
+        border-color: transparent;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        display: grid;
+        place-content: center;
+        transition: .4s;
+    }
+
+    .accordion_icon-plus,
+    .accordion_icon-minus {
+        grid-area: 1/1/2/2;
+        transition: .4s ease-in-out;
+        font-size: 1.2rem;
+    }
+
+    .accordion_icon-minus {
+        opacity: 0;
+        transform: rotate(-2turn);
+    }
+
+    .accordion_content {
+        border-top: .5px solid #52535D;
+        border-radius: 4px;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: .4s ease-in-out, padding .4s ease-in-out;
+    }
+
+    .accordion_content>* {
+        overflow: hidden;
+    }
+
+    .accordion.is-active .accordion_content {
+        border: .5px solid #52535D;
+        padding: 8px;
+        grid-template-rows: 1fr;
+    }
+
+    .accordion.accordion.is-active .accordion_icons {
+        border-color: white;
+    }
+
+    .accordion.is-active .accordion_icon-plus {
+        opacity: 0;
+        transform: rotate(2turn);
+    }
+
+    .accordion.is-active .accordion_icon-minus {
+        opacity: 1;
+        transform: rotate(0turn);
+    }
+}
+
+/* ------ Luna Dreams_login ------ */
+@media screen and (max-width:1100px) {
+    .loginWrapper {
+        width: 800px;
+    }
+
+    .loginBox {
+        gap: 4%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .loginWrapper {
+        width: 600px;
+    }
+
+    .loginBox {
+        flex-direction: column;
+    }
+
+    .loginBox {
+        gap: 4%;
+    }
+
+    .loginBox_1,
+    .loginBox_2 {
+        width: 100%;
+    }
+
+    .loginBox_hr {
+        border-image: repeating-linear-gradient(90deg, #B8B9C1 0 8px, transparent 8px 16px) 8;
+        width: 100%;
+        margin: 24px auto;
+    }
+
+    .login-data input {
+        width: 440px;
+    }
+
+    .nextbtn {
+        width: 450px;
+    }
+
+    .quick_login {
+        padding-right: 25%;
+    }
+}
+
+@media screen and (max-width:680px) {
+
+    .loginWrapper {
+        width: 500px;
+        text-align: center;
+    }
+
+    .tit_point {
+        color: #E1C047;
+        cursor: pointer;
+    }
+
+    .loginBox_1,
+    .loginBox_2 {
+        text-align: left;
+    }
+
+    .login-data input {
+        width: 95%;
+    }
+
+    .nextbtn {
+        width: 97%;
+    }
+
+}
+
+@media screen and (max-width:530px) {
+    .loginWrapper {
+        width: 400px;
+    }
+
+    .quick_login {
+        padding-right: 0;
+        gap: 36px;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    .loginWrapper {
+        width: 350px;
+    }
+
+    .quick_login {
+        padding-right: 0;
+        gap: 32px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+
+    .loginWrapper {
+        width: 335px;
+        text-align: center;
+    }
+
+    .nextbtn {
+        width: 330px;
+    }
+
+    .quick_login {
+        padding-right: 0;
+        gap: 24px;
+    }
+
+}
+
+/* ------ dreams ------ */
+
+@media screen and (max-width:880px) {
+
+    /* dreams */
+    .dreamsPage .dreams_notice li:nth-child(2),
+    .dreamsPage .dreams_notice li:nth-child(3),
+    .dreamsPage .dreams_notice ul li::before {
+        display: none;
+    }
+
+    .plancards_container {
+        height: auto;
+    }
+
+}
+
+/* ------ Luna Dreams_order ------ */
+@media screen and (max-width:1100px) {
+    .dreamsWrapper {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width:880px) {
+
+    /* order */
+    .page_order .dreams_notice li:nth-child(1),
+    .page_order .dreams_notice li:nth-child(3),
+    .page_order .dreams_notice ul li::before {
+        display: none;
+    }
+
+    .order_container {
+        flex-direction: column;
+        justify-self: center;
+        gap: 40px;
+    }
+
+    .receipt {
+        position: static;
+        order: 1;
+        width: 92%;
+    }
+
+    .order-cont {
+        order: 2;
+        width: 92%
+    }
+}
+
+@media screen and (max-width:680px) {
+    .dreams_notice h1 {
+        text-align: center;
+    }
+
+    .ordertext {
+        white-space: nowrap;
+        margin: 16px 0 0 12px;
+        padding-bottom: 16px;
+    }
+
+    .orderlist {
+        width: 120px;
+    }
+
+    select {
+        width: 40%;
+    }
+
+    .card-security,
+    .invoice {
+        flex-wrap: wrap;
+    }
+}
+
+/* ------ Planet news ------ */
+@media screen and (max-width:1250px) {
+    .news_section1 {
+        width: 100%;
+        margin: 100px auto 40px;
+    }
+
+    .newsSec2_contect {
+        width: 950px;
+    }
+
+    .planet_hide_on_mobile {
+        display: none;
+    }
+
+    .planet_hide_on_desktop {
+        display: block;
+    }
+
+
+    .pop_science {
+        width: 90%;
+        height: 960px;
+    }
+
+    .pop_science h3 {
+        margin-bottom: 0;
+    }
+
+    .planetPage .swiper-pagination-bullet {
+        background: #52535D;
+        opacity: 1;
+    }
+
+    .planetPage .swiper-pagination-bullet-active {
+        background: #E1C047;
+    }
+
+    .planetPage .swiper {
+        width: 100%;
+        height: 90%;
+        margin: 16px auto;
+
+    }
+
+    .planetPage .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .main-center img {
+        display: block;
+        width: 220px;
+    }
+
+    .main-right {
+        display: block;
+        width: 80%;
+        padding: 12px 0;
+        border-top: 1px solid #C7CBDA;
+        border-bottom: 1px solid #C7CBDA;
+    }
+
+    .main-right h4 {
+        text-align: center;
+    }
+
+
+    .main-right ul {
+        margin-top: 20px;
+        list-style-type: disc;
+    }
+
+    .main-right li {
+        line-height: 1.4;
+        padding-bottom: 8px;
+        margin-left: 24px;
+    }
+
+    .news_card2_wrapper {
+        width: 90%;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+
+    .news_cardlist2 {
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:1025px) {
+    .newsSec1_list {
+        width: 95%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 12px;
+    }
+
+    .newsSec1_1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .newsSec1_2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+    }
+
+    .newsSec1_3 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .newsSec1_4 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .news_cardlist1 {
+        height: auto;
+        width: 90%;
+        place-items: center;
+        gap: 24px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .cardList1_1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .cardList1_2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .cardList1_3 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .cardList1_4 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .newsSec2_contect {
+        width: 90%
+    }
+
+    .news_cardlist2 {
+        width: 100%;
+        justify-items: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+    }
+
+    .news_cardlist2 h4 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .cardList2_1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .cardList2_2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .cardList2_3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    .news_section1 {
+        width: 100%;
+    }
+
+    .newsSec1_list {
+        width: 90%;
+        height: auto;
+        padding: 0 32px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    .newsSec1_1 {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    .newsSec1_2 {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+    }
+
+    .newsSec1_3 {
+        height: 200px;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .newsSec1_4 {
+        height: 200px;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    .news_cardlist1 {
+        height: auto;
+        padding: 0 32px;
+        margin: 24px auto;
+        display: grid;
+        place-items: start;
+        gap: 24px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .cardList1_1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .cardList1_2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+    }
+
+    .cardList1_3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+    }
+
+    .cardList1_4 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .news_cardlist2 {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    }
+
+    .news_cardlist2 h4 {
+        font-family: 'latteheavy';
+        justify-self: center;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .cardList2_1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .cardList2_2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .cardList2_3 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+
+    .main-right {
+        width: 335px;
+    }
+
+}
+
+/* ------ About ------ */
+
+@media (max-width: 880px) {
+    .section1 {
+        width: 400px;
+    }
+
+    .section4 {
+        width: 400px;
+    }
+
+
+    .section4 .hide_on_mobile {
+        display: none;
+    }
+
+    .section4 .hide_on_desktop {
+        display: block;
+    }
+
+    .section4 img {
+        width: 90%;
+    }
+
+    .box-1 {
+        margin-top: 48px;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .section5 {
+        width: 400px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .section1,
+    .section2,
+    .section5 {
+        width: 343px;
+    }
+
+    .missionlist li:nth-child(2)::after {
+        width: 240px;
+    }
+
+    .section4 img {
+        margin-top: 48px;
+        width: 80%;
+    }
+
+    .box-1,
+    .box-2 {
+        display: none;
+    }
+
+}

@@ -6,33 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon_logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/plan_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/main.js"></script>
     <title>Luna Plan</title>
 </head>
 
 <body>
     <div class="top"></div>
     <!-- Header -->
-    <header class="header">
-        <a href="index.html"><img src="img/logo_L.svg" alt="logo_L"></a>
-        <ul>
-            <li><a href="Luna Plan.html">Luna Plan</a></li>
-            <li><a href="Luna Dreams_login.html">Luna Dreams</a></li>
-            <li><a href="Planet.html">Planet</a></li>
-            <li><a href="About.html">About</a></li>
-        </ul>
+    <header class="header" id="header">
+        <a class="headerLogo" href="index.html"><img class="hide_on_mobile" src="img/logo_L.svg" alt="logo_L"><img
+                class="hide_on_desktop" src="img/logo_S.svg"></a>
+        <span class="pageName">Luna Plan</span>
+        <div class="header_nav">
+            <div class="hamburger" id="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <ul class="headerNav_list transition" id="headerNav_list">
+                <li class="headerNav_item"><a class="nav_link  currentBtn" href="Luna Plan.html">Luna Plan</a></li>
+                <li class="headerNav_item"><a class="nav_link" href="Luna Dreams_login.html">Luna Dreams</a>
+                </li>
+                <li class="headerNav_item"><a class="nav_link" href="Planet News.html">Planet News</a></li>
+                <li class="headerNav_item"><a class="nav_link" href="About.html">About</a></li>
+            </ul>
+        </div>
     </header>
+    <div class="hamburgerOverlay" id="hamburgerOverlay"></div>
 
-    <!-- ----------Main----------- -->
-    <div class="main">
+    <!-- plan -->
+    <div class="plan">
         <h1>探月計畫 Luna Plan</h1>
         <ul>
             <li>
-                <h2>第 5 期&emsp;報名期間：即日起 - 2035.05.31</h2>
+                <h4>第 5 期&emsp;報名期間：即日起 - 2035.05.31</h4>
             </li>
         </ul>
         <img src="img/plan.png" alt="lunaplan">
-        <h3>總天數：8 天</h3>
+        <h5 class="tac">總天數：8 天</h5>
         <div class="box-1">
             <span>2035.07.01出發</span>
             <div class="txtline"></div>
@@ -81,8 +99,8 @@
     <!-- ----------Sec-1------------- -->
     <div id="exp1"></div>
     <div class="sec-1">
-        <h1>計畫說明</h1>
-        <h2>參與資格與選拔流程</h2>
+        <h2>計畫說明</h2>
+        <h4>參與資格與選拔流程</h4>
         <p>本計畫採取報名後審核制度，參與者須通過健康檢查與體能測試：</p>
         <ul>
             <li>健康檢查報告：須提供近 6 個月內的完整健康檢查報告。
@@ -90,7 +108,7 @@
             <li>體能測驗：將於 6 月 30 日進行，測驗項目包含耐力、心肺功能、平衡感與肌力等。每項指標達 75 分且平均 80 分以上者方可錄取。</li>
         </ul>
         <br>
-        <h2>登月前訓練計畫</h2>
+        <h4>登月前訓練計畫</h4>
         <p>參與者需接受為期一週的密集訓練，每天訓練6小時，包括：</p>
         <ul>
             <li>低重力適應訓練（水下模擬及懸吊裝置訓練）</li>
@@ -100,7 +118,7 @@
             <li>航天知識與模擬操控（基礎航天學、模擬登月艙操作）</li>
         </ul>
         <br>
-        <h2>返航後復健追蹤</h2>
+        <h4>返航後復健追蹤</h4>
         <p>Luna 提供完整的返航後身體復健計畫，確保參與者能夠順利適應地球重力，包括：
         </p>
         <ul>
@@ -109,7 +127,7 @@
             <li>醫療健康監測與心理調適</li>
         </ul>
         <br>
-        <h2>重要文件審閱</h2>
+        <h4>重要文件審閱</h4>
         <ul>
             <li>登月同意書：須簽署確認所有風險與安全須知</li>
             <li>保險合約書：涵蓋旅程期間的意外險與健康保險。</li>
@@ -118,7 +136,7 @@
     <!-- ----------Sec-2------------- -->
     <div id="exp2"></div>
     <div class="sec-2">
-        <h1>登月點介紹</h1>
+        <h2>登月點介紹</h2>
         <div class="s2-box">
             <!-- ------左側list + img ------ -->
             <div class="s2-box-1">
@@ -156,8 +174,8 @@
     <!-- ----------Sec-3------------- -->
     <div id="exp3"></div>
     <div class="sec-3">
-        <h1>注意事項</h1>
-        <h2>報名須知與條款</h2>
+        <h2>注意事項</h2>
+        <h4>報名須知與條款</h4>
         <p>凡報名者，即視為同意以下條款及主辦單位的活動辦法：</p>
         <ul>
             <li>本活動僅限年滿20歲之成年人參與。</li>
@@ -170,7 +188,7 @@
             <li>主辦單位保留調整、暫停或終止本活動的權利，任何相關修正皆以活動網站公告為準，恕不另行通知。如因不可抗力因素導致活動無法執行，主辦單位有權決定取消、終止或暫停活動。</li>
         </ul>
         <br>
-        <h2>登航須知與規範</h2>
+        <h4>登航須知與規範</h4>
         <p>安全與行為規範</p>
         <ul>
             <li>嚴禁攜帶危險物品：禁止攜帶易燃、爆炸物品，所有行李將經過嚴格安檢。</li>
@@ -200,72 +218,51 @@
     <!-- ----------Sec-4------------- -->
     <div id="exp4"></div>
     <div class="sec-4">
-        <h1>常見 Q&A</h1>
-        <h2>登月前問題</h2>
-        <p>Q：報名後可以更改地點或替換錄取者嗎？</p>
-        <p>A：不可更改地點或替換錄取者，每位參與者均需通過審核與測試。</p>
-        <br>
-        <p>Q：報到時需要攜帶什麼？</p>
-        <p>A：請攜帶身份證明、健康檢查報告與登月同意書。</p>
-        <br>
-        <p>Q：所購買的票券有提供履約保證嗎？</p>
-        <p>A：是的，所有登月票券均受保險保障，如遇不可抗力因素將安排延期或退款。</p>
-        <br>
-        <p>Q：火箭座位可以指定嗎？</p>
-        <p>A：座位由航天專家根據重量與平衡需求分配，恕不開放指定。</p>
-        <br>
-        <h2>航程相關問題</h2>
-        <p>Q：除了禁止攜帶的物品外，對太空艙還有哪些安全限制？</p>
-        <p>A：所有乘客需遵守安全帶規範、氣壓調節程序，並全程配合太空艙內的行為準則。</p>
-        <br>
-        <p>Q：航程中如有緊急狀況，該如何應對？</p>
-        <p>A：艙內備有緊急氧氣供應與醫療設備，乘客需服從指揮官指示，並按照應變手冊執行標準流程。</p>
-        <br>
-        <p>Q：飲食方面有哪些特別規定？</p>
-        <p>A：所有食物皆為太空食品，禁止攜帶個人食品，確保艙內環境穩定。</p>
-        <br>
-        <p>Q：登月期間的行程安排是如何規劃的？</p>
-        <p>A：行程包括登月探索、科研活動、模擬太空站生活等，詳細計畫將於行前簡報提供。</p>
-        <br>
-        <p>Q：返航後的適應期需要多久？</p>
-        <p>A：依個人體質不同，適應期約為2至4週，Luna將提供全面的健康監測與復健支持。</p>
+        <h2>常見 Q&A</h2>
+        <h4>登月前問題</h4>
+        <div id="sec1_qa">
+        </div>
+        <h4>航程相關問題</h4>
+        <div id="sec2_qa">
+        </div>
     </div>
-    <a href="#top" class="to-top-btn"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
-            fill="none">
-            <rect width="40" height="40" rx="20" transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 44 44)"
-                fill="white" />
-            <path d="M31.0003 26.929L23.9292 19.8579L16.8581 26.929" stroke="#000A1E" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round" />
-        </svg></a>
+
+    <div class="to_topBtn">
+        <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="40" height="40" rx="20" transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 44 44)"
+                    fill="white" />
+                <path d="M31.0003 26.929L23.9292 19.8579L16.8581 26.929" stroke="#000A1E" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <hr class="hr">
-        <div class="footer-contect">
-            <a href="index.html"><img class="ficon" src="img/logo_S.svg" alt="logo_S"></a>
-            <ul class="f_left">
-                <li><a href="#">Contact Luna</a>
-                <li><a href="#">Join Us</a></li>
-                <li><a href="#">Follow Luna</a></li>
-                <ol class="f_brand">
+        <hr class="footer_hr">
+        <div class="footer_contect">
+            <a href="index.html"><img class="footer_logo" src="img/logo_S.svg" alt="logo_S"></a>
+            <div class="footer_leftbox">
+                <ul class="footer_link">
+                    <li><a href="#">Contact Luna</a>
+                    <li class="hide_on_mobile"><a href="#">Join Us</a></li>
+                    <li class="hide_on_mobile"><a href="#">Follow Luna</a></li>
+                </ul>
+                <ol class="footer_brand">
                     <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                 </ol>
-            </ul>
+            </div>
 
-            <ul class="f_right">
+            <ul class="footer_rightbox hide_on_mobile" ">
                 <li>Tel：+886-1-234-5678</li>
                 <li>Fax：+886-8-765-4321</li>
-                <li><span>Add：</span><span>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506
-                        , Taiwan
-                        (R.O.C.)</span>
+                <li>Add：4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan（R.O.C.）
                 </li>
             </ul>
         </div>
-        <p>COPYRIGHT © 2025 Luna All Right Reserved.</p>
-
+        <p></p>
     </footer>
 </body>
 

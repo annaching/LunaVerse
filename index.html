@@ -6,52 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon_logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/main.js"></script>
     <title>Luna Verse</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <a href="index.html"><img src="img/logo_L.svg" alt="logo_L"></a>
-        <ul>
-            <li><a href="Luna Plan.html">Luna Plan</a></li>
-            <li><a href="Luna Dreams_login.html">Luna Dreams</a></li>
-            <li><a href="Planet.html">Planet</a></li>
-            <li><a href="About.html">About</a></li>
-        </ul>
+    <header class="header" id="header">
+        <a class="headerLogo" href="index.html"><img class="hide_on_mobile" src="img/logo_L.svg" alt="logo_L"><img
+                class="hide_on_desktop" src="img/logo_S.svg"></a>
+        <span class="pageName">Luna Verse</span>
+        <div class="header_nav">
+            <div class="hamburger" id="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <ul class="headerNav_list transition" id="headerNav_list">
+                <li class="headerNav_item"><a class="nav_link" href="Luna Plan.html">Luna Plan</a></li>
+                <li class="headerNav_item"><a class="nav_link" href="Luna Dreams_login.html">Luna Dreams</a>
+                </li>
+                <li class="headerNav_item"><a class="nav_link" href="Planet News.html">Planet News</a></li>
+                <li class="headerNav_item"><a class="nav_link" href="About.html">About</a></li>
+            </ul>
+        </div>
     </header>
+    <div class="hamburgerOverlay" id="hamburgerOverlay"></div>
 
     <!-- --------Planet Start--------- -->
     <div class="planet-container">
         <!-- 1. 土星 -->
         <div class="planet">
-            <a href="Planet.html">
-                <img src="img/Saturn.png" alt="Saturn" style="width: 210px;">
+            <a href="Planet News.html">
+                <img class="saturn" src="img/Saturn.png" alt="Saturn">
                 <span class="planet-name">土星 Saturn</span>
             </a>
         </div>
 
         <!-- 2. 海王星 -->
         <div class="planet">
-            <a href="Planet.html">
-                <img src="img/Neptune.png" alt="Neptune" style="width: 80px;">
+            <a href="Planet News.html">
+                <img class="neptune" src="img/Neptune.png" alt="Neptune">
                 <span class="planet-name">海王星 Neptune</span>
             </a>
         </div>
 
         <!-- 3. 火星 -->
         <div class="planet">
-            <a href="Planet.html">
-                <img src="img/Mars.png" alt="Mars" style="width: 65px;">
+            <a href="Planet News.html">
+                <img class="mars" src="img/Mars.png" alt="Mars">
                 <span class="planet-name">火星 Mars</span>
             </a>
         </div>
 
         <!-- 4. 天王星 -->
         <div class="planet">
-            <a href="Planet.html">
-                <img src="img/Uranus.png" alt="Uranus" style="width:165px;">
+            <a href="Planet News.html">
+                <img class="uranus" src="img/Uranus.png" alt="Uranus">
                 <span class="planet-name">天王星 Uranus</span>
             </a>
         </div>
@@ -59,112 +77,116 @@
         <!-- 5. 月亮 -->
         <div class="planet">
             <a href="Luna Plan.html">
-                <img src="img/Moon.png" alt="Uranus" style="width:30px;">
+                <img class="moon" src="img/Moon.png" alt="Moon">
                 <span class="planet-name">月亮 Moon</span>
             </a>
         </div>
 
         <!-- 6. 金星 -->
         <div class="planet">
-            <a href="Planet.html">
-                <img src="img/Venus.png" alt="Venus" style="width: 80px;">
+            <a href="Planet News.html">
+                <img class="venus" src="img/Venus.png" alt="Venus">
                 <span class="planet-name">金星 Venus</span>
             </a>
         </div>
 
         <!-- 7. 地球 -->
         <div class="planet">
-            <a href="Planet.html">
-                <img src="img/Earth.png" alt="Earth" style="width: 100px;">
+            <a href="Planet News.html">
+                <img class="earth" src="img/Earth.png" alt="Earth">
                 <span class="planet-name">地球 Earth</span>
             </a>
         </div>
 
         <!-- 8. 水星 -->
         <div class="planet">
-            <a href="Planet.html">
-                <img src="img/Mercury.png" alt="Mercury" style="width: 50px;">
+            <a href="Planet News.html">
+                <img class="mercury" src="img/Mercury.png" alt="Mercury">
                 <span class="planet-name">水星 Mercury</span>
             </a>
         </div>
 
         <!-- 9. 木星 -->
         <div class="planet">
-            <a href="Planet.html">
-                <img src="img/Jupiter.png" alt="Jupiter" style="width: 180px;">
+            <a href="Planet News.html">
+                <img class="jupiter" src="img/Jupiter.png" alt="Jupiter">
                 <span class="planet-name">木星 Jupiter</span>
             </a>
         </div>
 
         <!-- slogan -->
         <div class="overlay">
-            <div class="text-container">
+            <div class="slogan_text">
                 <h1>To The Luna</h1>
                 <h2>月球探險新紀元，夢想起航</h2>
             </div>
         </div>
-
     </div>
 
-    <!-- ---------Planet End------------ -->
+    <!-- --------Planet End----------- -->
 
     <!-- Section 1 -->
-    <section class="sec-1">
-        <h1>Luna Dreams</h1>
-        <p>隨著「阿提米絲計畫」（Artemis Program）掀起探索宇宙的新浪潮，Luna
+    <section class="section">
+        <h2>Luna Dreams</h2>
+        <h5>隨著「阿提米絲計畫」（Artemis Program）掀起探索宇宙的新浪潮，Luna
             將為你開啟登月之旅！在無重力環境中親身體驗太空人的日常，漫步銀白色的月球表面，造訪阿波羅登陸遺址、月球山脈，細細感受這顆月球的獨特地貌，並隨時眼見地球在無垠宇宙中的絕美球影。
             <br><br>另外，別錯過傳奇的「寧靜基地」，可透過建置在月球無線電望遠鏡所回傳的即時影像，窺探遙遠星系的深邃奧秘，感受震撼人心的宇宙視野。這不僅是一場旅行，更是一場探索未知的星際冒險！
             <br><br>🚀 Luna Dreams 即將啟航，準備好登上月球，開啟你的星際之夢了嗎？
-        </p>
-        <a href="Luna Plan.html">搶先探索宇宙<i class="fa-solid fa-chevron-right"></i></a>
+        </h5>
+        <a class="primaryBtn" href="Luna Plan.html">搶先探索宇宙 <i class="fa-solid fa-angle-right"></i></a>
     </section>
 
     <!-- Section 2 -->
-    <section class="sec-2">
+    <section class="section">
         <h1>Next Missions — To The Mars</h1>
-        <div class="contect">
-            <h2>火星開拓——人類文明的新篇章</h2>
-            <img src="img/index_section2.jpg" alt="index_section2">
-            <p>當地球資源日漸消耗，人類的未來將何去何從？Luna
+        <h2>火星開拓——人類文明的新篇章</h2>
+        <div class="float_block">
+            <img src="img/index_img01.jpg" alt="index_img01">
+            <h5>當地球資源日漸消耗，人類的未來將何去何從？Luna
                 正積極投入火星殖民計畫，目標不僅是探索，更是開創新文明的契機。
                 <br><br>透過先進的自律機器人與AI運算，我們正在建構火星自給自足基地，從氧氣生成、水資源開發，到農業種植技術，每一個步驟都將決定人類在火星的未來。
                 <br><br>研究團隊正進行火星氣候模擬，分析極端環境對人類生理與心理的影響，確保未來的星際移居計畫能穩健推進。
                 <br><br>這是一場前所未有的挑戰，但也是人類文明進化的重要里程碑。我們不只是想像未來，而是正在打造它。火星，將不再只是遙遠的夢想，而是我們即將踏足的新世界。
-            </p>
+            </h5>
         </div>
     </section>
 
+    <div class="to_topBtn">
+        <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="40" height="40" rx="20" transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 44 44)"
+                    fill="white" />
+                <path d="M31.0003 26.929L23.9292 19.8579L16.8581 26.929" stroke="#000A1E" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+    </div>
     <!-- Footer -->
     <footer>
-        <hr class="hr">
-        <div class="footer-contect">
-            <a href="index.html"><img class="ficon" src="img/logo_S.svg" alt="logo_S"></a>
-            <ul class="f_left">
-                <li><a href="#">Contact Luna</a>
-                <li><a href="#">Join Us</a></li>
-                <li><a href="#">Follow Luna</a></li>
-                <ol class="f_brand">
+        <hr class="footer_hr">
+        <div class="footer_contect">
+            <a href="index.html"><img class="footer_logo" src="img/logo_S.svg" alt="logo_S"></a>
+            <div class="footer_leftbox">
+                <ul class="footer_link">
+                    <li><a href="#">Contact Luna</a>
+                    <li class="hide_on_mobile"><a href="#">Join Us</a></li>
+                    <li class="hide_on_mobile"><a href="#">Follow Luna</a></li>
+                </ul>
+                <ol class="footer_brand">
                     <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                 </ol>
-            </ul>
+            </div>
 
-            <ul class="f_right">
+            <ul class="footer_rightbox hide_on_mobile" ">
                 <li>Tel：+886-1-234-5678</li>
                 <li>Fax：+886-8-765-4321</li>
-                <li><span>Add：</span><span>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506
-                        , Taiwan
-                        (R.O.C.)</span>
+                <li>Add：4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan（R.O.C.）
                 </li>
             </ul>
         </div>
-        <p>COPYRIGHT © 2025 Luna All Right Reserved.</p>
-
+        <p></p>
     </footer>
 
-
 </body>
-
 </html>

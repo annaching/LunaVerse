@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon_logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <title>Planet News</title>
+</head>
+
+<body class="planetPage">
+    <!-- Header -->
+    <header class="header" id="header">
+        <a class="headerLogo" href="index.html"><img class="hide_on_mobile" src="img/logo_L.svg" alt="logo_L"><img
+                class="hide_on_desktop" src="img/logo_S.svg"></a>
+        <span class="pageName">Planet News</span>
+        <div class="header_nav">
+            <div class="hamburger" id="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <ul class="headerNav_list transition" id="headerNav_list">
+                <li class="headerNav_item"><a class="nav_link" href="Luna Plan.html">Luna Plan</a></li>
+                <li class="headerNav_item"><a class="nav_link" href="Luna Dreams_login.html">Luna Dreams</a>
+                </li>
+                <li class="headerNav_item"><a class="nav_link currentBtn" href="Planet News.html">Planet News</a></li>
+                <li class="headerNav_item"><a class="nav_link" href="About.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="hamburgerOverlay" id="hamburgerOverlay"></div>
+
+
+    <!-- news_section1 -->
+    <section class="news_section1">
+        <h3 class="mb_24">天文最新消息</h3>
+        <div class="newsSec1_list">
+            <div class="newsSec1_1 block">
+                <a href="#">
+                    <img src="img/news1-1.jpg" alt="news1-1">
+                    <div class="block-overlay"></div>
+                    <div class="block-title">來自 4000 萬光年的超新星 「絮狀」螺旋星系</div>
+                </a>
+            </div>
+            <div class="newsSec1_2 block">
+                <a href="#">
+                    <img src="img/news1-2.jpg" alt="news1-2">
+                    <div class="block-overlay"></div>
+                    <div class="block-title">木星地表成分、冰層厚度與地磁研究出爐</div>
+                </a>
+            </div>
+            <div class="newsSec1_3 block">
+                <a href="#">
+                    <img src="img/news1-3.jpg" alt="news1-3">
+                    <div class="block-overlay"></div>
+                    <div class="block-title">哈伯望遠鏡捕捉小麥哲倫星系的絢麗雲層</div>
+                </a>
+            </div>
+            <div class="newsSec1_4 block">
+                <a href="#">
+                    <img src="img/news1-4.jpg" alt="news1-4">
+                    <div class="block-overlay"></div>
+                    <div class="block-title">錢卓拉望遠鏡發現古老死亡恆星遺跡線索</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- news_card1 -->
+        <div class="news_cardlist1">
+            <div class="cardList1_1">
+                <a href="#">
+                    <div class="cList1-cardimg">
+                        <img src="img/cardnews1-1.jpg" alt="cardnews1-1">
+                    </div>
+                    <div class="cardtxt">
+                        <span>7 Min Read</span>
+                        <p>從月球到火星，Luan 團隊進行紅色星球的氣候模擬，挑戰氧氣生成、水資源開發</p>
+                        <span>By Lucas</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cardList1_2">
+                <a href="#">
+                    <div class="cList1-cardimg">
+                        <img src="img/cardnews1-2.jpg" alt="cardnews1-2">
+                    </div>
+                    <div class="cardtxt">
+                        <span>3 Min Read</span>
+                        <p>宇宙中最極端又神秘的黑洞：質量、大小與引力如何影響時空？</p>
+                        <span>By Alden</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cardList1_3">
+                <a href="#">
+                    <div class="cList1-cardimg">
+                        <img src="img/cardnews1-3.jpg" alt="cardnews1-3">
+                    </div>
+                    <div class="cardtxt">
+                        <span>5 Min Read</span>
+                        <p>全球頂尖望遠鏡巡禮：探索現代天文學最先進的觀測技術與結合 AR 擴增實境的延伸</p>
+                        <span>By Charlotte</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cardList1_4">
+                <a href="#">
+                    <div class="cList1-cardimg">
+                        <img src="img/cardnews1-4.jpg" alt="cardnews1-4">
+                    </div>
+                    <div class="cardtxt">
+                        <span>6 Min Read</span>
+                        <p>AI 人工智慧在太空探索的角色：從導航、偵測到解析外星訊號</p>
+                        <span>By Orion</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- news_section2 -->
+    <a href="#">
+        <section class="news_section2 block">
+            <img src="img/news2.jpg" alt="news2">
+            <div class="block-overlay"></div>
+            <div class="newsSec2_contect">
+                <h1>黑洞噴發神秘 X 射線 揭發隱藏的宇宙規律</h1>
+                <h2>天文學家觀測到人馬座A*的異常活動</h2>
+            </div>
+        </section>
+    </a>
+
+    <!-- pop_science -->
+    <!-- 桌機顯示 -->
+    <div class="pop_science planet_hide_on_mobile">
+        <h3 class="mb_24">行星小科普</h3>
+        <main>
+            <div class="main-left">
+                <ul class="planet-menu">
+                </ul>
+            </div>
+            <div class="main-center">
+            </div>
+            <div class="main-right">
+            </div>
+        </main>
+    </div>
+    <!-- RWD 顯示(swiper -- plugin) -->
+    <div class="pop_science planet_hide_on_desktop">
+        <h3 class="mb_24">行星小科普</h3>
+        <div class="swiper planetSwiper">
+            <div class="swiper-wrapper">
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- news_card2 -->
+    <div class="news_card2_wrapper">
+        <div class="news_cardlist2">
+            <h4>觀測星訊</h4>
+            <div class="cardList2_1">
+                <a href="#">
+                    <div class="cList2-cardimg">
+                        <img src="img/cardnews2-1.jpg" alt="cardnews2-1">
+                    </div>
+                    <div class="cardtxt">
+                        <span>2034-02-24</span>
+                        <p>天文界最新突破：木衛二快艇偵測出液態水</p>
+                        <span>By Cosmo</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cardList2_2">
+                <a href="#">
+                    <div class="cList2-cardimg">
+                        <img src="img/cardnews2-2.jpg" alt="cardnews2-2">
+                    </div>
+                    <div class="cardtxt">
+                        <span>2034-03-08</span>
+                        <p>再度捕捉神秘電波 或來自外星文明？</p>
+                        <span>By Sophia</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cardList2_3">
+                <a href="#">
+                    <div class="cList2-cardimg">
+                        <img src="img/cardnews2-3.png" alt="cardnews2-3">
+                    </div>
+                    <div class="cardtxt">
+                        <span>2034-03-19</span>
+                        <p>寧靜基地捕捉遙遠星系 解析宇宙最早期誕生過程</p>
+                        <span>By Olivia</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr class="footer_hr">
+        <div class="footer_contect">
+            <a href="index.html"><img class="footer_logo" src="img/logo_S.svg" alt="logo_S"></a>
+            <div class="footer_leftbox">
+                <ul class="footer_link">
+                    <li><a href="#">Contact Luna</a>
+                    <li class="hide_on_mobile"><a href="#">Join Us</a></li>
+                    <li class="hide_on_mobile"><a href="#">Follow Luna</a></li>
+                </ul>
+                <ol class="footer_brand">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ol>
+            </div>
+
+            <ul class="footer_rightbox hide_on_mobile" ">
+                <li>Tel：+886-1-234-5678</li>
+                <li>Fax：+886-8-765-4321</li>
+                <li>Add：4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan（R.O.C.）
+                </li>
+            </ul>
+        </div>
+        <p></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+</body>
+
+</html>

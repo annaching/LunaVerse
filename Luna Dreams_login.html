@@ -6,108 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon_logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/dreams_login_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/main.js"></script>
     <title>Luna Dreams_login</title>
 </head>
 
 <body>
-    <!----- Header ----->
-    <header>
-        <div class="header">
-            <a href="index.html"><img src="img/logo_L_balck.svg" alt="logo_L"></a>
-            <ul>
-                <li><a href="Luna Plan.html">Luna Plan</a></li>
-                <li><a href="Luna Dreams.html">Luna Dreams</a></li>
-                <li><a href="Planet.html">Planet</a></li>
-                <li><a href="About.html">About</a></li>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a class="headerLogo" href="index.html"><img class="hide_on_mobile" src="img/logo_L.svg" alt="logo_L"><img
+                class="hide_on_desktop" src="img/logo_S.svg"></a>
+        <span class="pageName">探索商店</span>
+        <div class="header_nav">
+            <div class="hamburger" id="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <ul class="headerNav_list transition" id="headerNav_list">
+                <li class="headerNav_item"><a class="nav_link" href="Luna Plan.html">Luna Plan</a></li>
+                <li class="headerNav_item"><a class="nav_link currentBtn" href="Luna Dreams_login.html">Luna Dreams</a>
+                </li>
+                <li class="headerNav_item"><a class="nav_link" href="Planet News.html">Planet News</a></li>
+                <li class="headerNav_item"><a class="nav_link" href="About.html">About</a></li>
             </ul>
         </div>
-        <!-- Nav -->
-        <nav class="nav">
-            <h1>探索商店</h1>
-            <ul>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="-0.5" y="-0.5" width="39" height="39" rx="19.5"
-                                transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 43 43)" fill="white"
-                                stroke="currentColor" />
-                            <path
-                                d="M19.5 18.5C19.5 20.981 21.519 23 24 23C26.481 23 28.5 20.981 28.5 18.5C28.5 16.019 26.481 14 24 14C21.519 14 19.5 16.019 19.5 18.5ZM32 33H33V32C33 28.141 29.859 25 26 25H22C18.14 25 15 28.141 15 32V33H32Z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="-0.5" y="-0.5" width="39" height="39" rx="19.5"
-                                transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 43 43)" fill="white"
-                                stroke="currentColor" />
-                            <g clip-path="url(#clip0_209_1595)">
-                                <path d="M16.5 28L29.5 28L32 18L14 18L16.5 28Z" fill="currentColor" />
-                                <path d="M34.5 15L32.75 15L32 18M32 18L29.5 28L16.5 28L14 18L32 18Z"
-                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M29.5 33C28.6716 33 28 32.3284 28 31.5C28 30.6716 28.6716 30 29.5 30C30.3284 30 31 30.6716 31 31.5C31 32.3284 30.3284 33 29.5 33Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M16.5 33C15.6716 33 15 32.3284 15 31.5C15 30.6716 15.6716 30 16.5 30C17.3284 30 18 30.6716 18 31.5C18 32.3284 17.3284 33 16.5 33Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_209_1595">
-                                    <rect width="24" height="24" fill="white"
-                                        transform="matrix(-1 -1.19249e-08 -1.19249e-08 1 36 12)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
     </header>
+    <div class="hamburgerOverlay" id="hamburgerOverlay"></div>
 
-    <!-- -----login wrapper----- -->
-    <div class="login-wrapper">
-        <h1>登入 Luna Dreams</h1>
-        <!-- box-content -->
-        <div class="box-content">
-            <!-- box-1 -->
-            <div class="box-1">
-                <h4>Luna 為確保每位太空旅客的安全性，加入行程方案前會先審核您的個人基本狀況。</h4>
-                <h4><i class="fa-solid fa-circle-info"></i>首次加入 Luna Dreams 三步驟</h4>
-                <div class="box-1-txt">
-                    <ul>
-                        <li>1.建立<a class="verify" href="#">審核資料</a></li>
-                        <li>2.邀請碼建立個人帳號</li>
-                        <li>3.登入帳號進入 Luna Dreams 方案頁</li>
-                    </ul>
+    <!-- loginWrapper -->
+    <div class="loginWrapper">
+        <h1 class="point">登入 Luna Dreams</h1>
+        <!-- loginBox -->
+        <div class="loginBox">
+            <!-- loginBox_1 -->
+            <div class="loginBox_1">
+                <h4 class="hide_on_desktop mb_24 r_mobile_font20">Luna 為確保每位太空旅客的安全性，加入行程方案前會先審核您的個人基本狀況。</h4>
+                <h4 class="point r_mobile_font20"><i class="fa-solid fa-circle-info"></i>首次加入 <a class="tit_point"
+                        href="#">Luna
+                        Dreams</a> <span class=" d_inlineblock hide_on_mobile">三步驟</span></h4>
+                <div class="loginBox_1_txt hide_on_mobile">
+                    <ol>
+                        <li>建立<a class="verify" href="#">審核資料</a></li>
+                        <li>邀請碼建立個人帳號</li>
+                        <li>登入帳號進入 Luna Dreams 方案頁</li>
+                    </ol>
                 </div>
+                <h4 class="hide_on_mobile">Luna 為確保每位太空旅客的安全性，加入行程方案前會先審核您的個人基本狀況。</h4>
             </div>
-            <hr class="box-hr">
-            <!-- box-2 -->
-            <div class="box-2">
-                <h4><i class="fa-solid fa-circle-info"></i>已有帳號登入</h4>
+            <hr class="loginBox_hr">
+            <!-- loginBox_2 -->
+            <div class="loginBox_2">
+                <h4 class="point r_mobile_font20"><i class="fa-solid fa-circle-info"></i>已有帳號登入</h4>
 
-                <!-- box-3 -->
-                <div class="box-3">
-                    <h4>帳號</h4>
+                <!-- loginBox_data -->
+                <div class="loginBox_container">
+                    <h4 class="r_mobile_font16">帳號</h4>
                     <div class="login-data">
-                        <input type="text" name="account" id="account" placeholder="電子郵件地址">
+                        <input type="email" name="account" id="account" placeholder="電子郵件地址">
                         <br>
                         <span>還沒有帳號？請先建立<a class="verify" href="#">審核資料</a></span>
                         <br>
                         <span><a href="#">忘記電子郵件地址？</a></span>
                     </div>
                 </div>
-                <!-- box-4 -->
-                <div class="box-4">
-                    <h4>密碼</h4>
+                <!-- loginBox_data -->
+                <div class="loginBox_container">
+                    <h4 class="r_mobile_font16">密碼</h4>
                     <div class="login-data">
                         <input type="text" name="account" id="account" placeholder="輸入您的密碼">
                         <br>
@@ -115,41 +86,46 @@
                     </div>
                 </div>
                 <div class="nextbtn">
-                    <a href="Luna Dreams.html">下一步</a>
+                    <a class="primaryBtn" href="Luna Dreams.html">下一步</a>
+                </div>
+                <h4 class="point r_mobile_font20">或使用快速登入</h4>
+                <div class="quick_login">
+                    <a href="#"><img src="img/line-brands.svg" alt="line-brands"></a>
+                    <a href="#"><img src="img/facebook-brands.svg" alt="facebook-brands"></a>
+                    <a href="#"><img src="img/google-brands.svg" alt="google-brands"></a>
+                    <a href="#"><img src="img/apple-brands.svg" alt="apple-brands"></a>
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <!-- Footer -->
     <footer>
-        <hr class="hr">
-        <div class="footer-contect">
-            <a href="index.html"><img class="ficon" src="img/logo_S.svg" alt="logo_S"></a>
-            <ul class="f_left">
-                <li><a href="#">Contact Luna</a>
-                <li><a href="#">Join Us</a></li>
-                <li><a href="#">Follow Luna</a></li>
-                <ol class="f_brand">
+        <hr class="footer_hr">
+        <div class="footer_contect">
+            <a href="index.html"><img class="footer_logo" src="img/logo_S.svg" alt="logo_S"></a>
+            <div class="footer_leftbox">
+                <ul class="footer_link">
+                    <li><a href="#">Contact Luna</a>
+                    <li class="hide_on_mobile"><a href="#">Join Us</a></li>
+                    <li class="hide_on_mobile"><a href="#">Follow Luna</a></li>
+                </ul>
+                <ol class="footer_brand">
                     <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                 </ol>
-            </ul>
+            </div>
 
-            <ul class="f_right">
+            <ul class="footer_rightbox hide_on_mobile" ">
                 <li>Tel：+886-1-234-5678</li>
                 <li>Fax：+886-8-765-4321</li>
-                <li><span>Add：</span><span>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506
-                        , Taiwan
-                        (R.O.C.)</span>
+                <li>Add：4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan（R.O.C.）
                 </li>
             </ul>
         </div>
-        <p>COPYRIGHT © 2025 Luna All Right Reserved.</p>
+        <p></p>
     </footer>
 
 </body>
