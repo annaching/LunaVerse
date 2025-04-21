@@ -501,8 +501,8 @@ footer p {
 /* To top */
 .to_topBtn {
     position: fixed;
-    bottom: 16px;
-    right: 80px;
+    bottom: 8%;
+    right: 4.5%;
     opacity: 0;
     transition: .5s;
 }
@@ -517,6 +517,13 @@ footer p {
 
 .to_topBtn svg:hover rect {
     fill: #B8B9C1;
+}
+
+@media screen and (max-width:430px) {
+    .to_topBtn {
+        bottom: 8%;
+        right: 6%;
+    }
 }
 
 /* 字型 */

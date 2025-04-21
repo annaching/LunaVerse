@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Header 縮放
+    // ----------Header 縮放
     let lastScrollTop = 0;
     let delta = 5;
     let header = $(`#header`);
@@ -13,6 +13,7 @@ $(document).ready(function () {
         if (cuurentScroll > lastScrollTop) {
             header.addClass(`header-hide`);
             loginNav.addClass(`loginNav-hide`);
+
         } else {
             header.removeClass(`header-hide`);
             loginNav.removeClass(`loginNav-hide`);
@@ -20,8 +21,8 @@ $(document).ready(function () {
         lastScrollTop = cuurentScroll;
     });
 
-    // Hamburger
-    // menu 開關
+
+    // ----------Hamburger menu 開關
     $(`#hamburger`).on(`click`, function () {
         $(this).toggleClass(`active`);
         $(`#headerNav_list`).toggleClass(`active`);
@@ -35,97 +36,27 @@ $(document).ready(function () {
         $(this).removeClass(`active`);
     });
 
-    // to_top
+
+    // ----------to_topBtn
     $(`.to_topBtn a`).click(function () {
         $('html, body').animate({ scrollTop: 0 }, 500);
     });
-});
+    $(window).scroll(function () {
+        let Top = $(this).scrollTop();
+        if (Top >= 20) {
+            $(`.to_topBtn`).addClass('active');
+        } else {
+            $(`.to_topBtn`).removeClass('active');
+        }
+    });
 
-$(window).scroll(function () {
-    let Top = $(this).scrollTop();
-    if (Top >= 20) {
-        $(`.to_topBtn`).addClass('active');
-    } else {
-        $(`.to_topBtn`).removeClass('active');
-    }
 
-    // footer copyright
+    // ----------footer copyright
     const currentYear = new Date().getFullYear();
     $(`footer p`).html(`COPYRIGHT&copy; ${currentYear} Luna All Rights Reserved.`);
 
-    // input focus
-    $(`input[type="text"], input[type="number"], input[type="email"]`).on({
-        focus: function () {
-            $(this).css(`background-color`, `#EEEEF0`);
-        }, blur: function () {
-            if ($(this).val() === '') {
-                $(this).css(`background-color`, `#000A1E`);
-                $(this).addClass(`alert-border`);
-            } else {
-                $(this).css(`background-color`, `#EEEEF0`);
-                $(this).removeClass(`alert-border`);
-            }
-        }
-    }).on(`input`, function () {
-        if ($(this).val() !== '') {
-            $(this).removeClass(`alert-border`)
-            $(this).css(`background-color`, `#EEEEF0`)
-        }
-    });
 
-    $(`input[type="email"]`).blur(function () {
-        if ($(this).val() === '') {
-            $(this).attr('placeholder', 'luna@lunaverse.com')
-        }
-    });
-});
-
-
-// plan
-// Q&A--Content
-$(document).ready(function () {
-    const sec1_qa = [
-        {
-            question: "Q：報名後可以更改地點或替換錄取者嗎？",
-            answer: "A：不可更改地點或替換錄取者，每位參與者均需通過審核與測試。",
-        },
-        {
-            question: "Q：報到時需要攜帶什麼？",
-            answer: "A：請攜帶身份證明、健康檢查報告與登月同意書。",
-        },
-        {
-            question: "Q：所購買的票券有提供履約保證嗎？",
-            answer: "A：是的，所有登月票券均受保險保障，如遇不可抗力因素將安排延期或退款。",
-        },
-        {
-            question: "Q：火箭座位可以指定嗎？",
-            answer: "A：座位由航天專家根據重量與平衡需求分配，恕不開放指定。",
-        },
-    ]
-
-    const sec2_qa = [
-        {
-            question: "Q：除了禁止攜帶的物品外，對太空艙還有哪些安全限制？",
-            answer: "A：所有乘客需遵守安全帶規範、氣壓調節程序，並全程配合太空艙內的行為準則。",
-        },
-        {
-            question: "Q：航程中如有緊急狀況，該如何應對？",
-            answer: "A：艙內備有緊急氧氣供應與醫療設備，乘客需服從指揮官指示，並按照應變手冊執行標準流程。",
-        },
-        {
-            question: "Q：飲食方面有哪些特別規定？",
-            answer: "A：所有食物皆為太空食品，禁止攜帶個人食品，確保艙內環境穩定。",
-        },
-        {
-            question: "Q：登月期間的行程安排是如何規劃的？",
-            answer: "A：行程包括登月探索、科研活動、模擬太空站生活等，詳細計畫將於行前簡報提供。",
-        },
-        {
-            question: "Q：返航後的適應期需要多久？",
-            answer: "A：依個人體質不同，適應期約為2至4週，Luna將提供全面的健康監測與復健支持。",
-        },
-    ]
-
+    // ----------plan Q&A accordion
     sec1_qa.forEach((qa) => {
         $(`#sec1_qa`).append(`
             <div class="accordion">
@@ -160,7 +91,6 @@ $(document).ready(function () {
             `)
     })
 
-    // Q&A--accordion
     // 使用事件委託綁定 click 事件
     $('#sec1_qa').on('click', '.accordion_title', function () {
         // .accordion 原本就有在 css 設定 is-active
@@ -177,10 +107,117 @@ $(document).ready(function () {
         accordionElement.siblings('.accordion.is-active').removeClass('is-active');
     });
 
-})
 
-// Plan;Dreams
-// planData
+    // ----------Dreams Cards
+    planData.forEach((site, i) => {
+        $(`.plancards`).append(`
+         <li data-index="${i}">
+            <a href="Luna Dreams_order.html">
+                <div class="plan_card">
+                    <img src="img/${site.img}" alt="${site.img}">
+                    <div class="plancard_data">
+                        <div class="landing_point">
+                            <h5 class="point">${site.name}${site.latin}</h5>
+                            <h6>${site.summary}</h6>
+                        </div>
+                        <div class="card-meta">
+                            <p><i class="fa-solid fa-user-group"></i>${site.count}</p>
+                            <p><i class="fa-solid fa-calendar-days"></i>${site.date}</p>
+                        </div>
+                    </div>
+                    <h5 class="plan_price point">${site.price}</h5>
+                    <span>立即報名</span>
+                </div>
+            </a>
+        </li>`)
+    });
+    const lastCardButton = $(`.plancards li:last-child .plan_card span`);
+    lastCardButton.text('報名額滿');
+    const lastCard = $(`.plancards li:last-child`);
+    lastCard.css('opacity', '0.5');
+    const lastCardlink = $(`.plancards li:last-child a`);
+    lastCardlink.css('cursor', 'default');
+
+
+    // ----------Order input focus
+    $(`input[type="text"], input[type="number"], input[type="email"]`).on({
+        focus: function () {
+            $(this).css(`background-color`, `#EEEEF0`);
+        }, blur: function () {
+            if ($(this).val() === '') {
+                $(this).css(`background-color`, `#000A1E`);
+                $(this).addClass(`alert-border`);
+            } else {
+                $(this).css(`background-color`, `#EEEEF0`);
+                $(this).removeClass(`alert-border`);
+            }
+        }
+    }).on(`input`, function () {
+        if ($(this).val() !== '') {
+            $(this).removeClass(`alert-border`)
+            $(this).css(`background-color`, `#EEEEF0`)
+        }
+    });
+
+    $(`input[type="email"]`).blur(function () {
+        if ($(this).val() === '') {
+            $(this).attr('placeholder', 'luna@lunaverse.com')
+        }
+    });
+
+
+    // Resize 檢查 -> Plugin Swiper
+    checkScreenWidth();
+    $(window).on('resize', checkScreenWidth);
+
+});
+
+
+// Plan Q&A--Content
+const sec1_qa = [
+    {
+        question: "Q：報名後可以更改地點或替換錄取者嗎？",
+        answer: "A：不可更改地點或替換錄取者，每位參與者均需通過審核與測試。",
+    },
+    {
+        question: "Q：報到時需要攜帶什麼？",
+        answer: "A：請攜帶身份證明、健康檢查報告與登月同意書。",
+    },
+    {
+        question: "Q：所購買的票券有提供履約保證嗎？",
+        answer: "A：是的，所有登月票券均受保險保障，如遇不可抗力因素將安排延期或退款。",
+    },
+    {
+        question: "Q：火箭座位可以指定嗎？",
+        answer: "A：座位由航天專家根據重量與平衡需求分配，恕不開放指定。",
+    },
+]
+
+const sec2_qa = [
+    {
+        question: "Q：除了禁止攜帶的物品外，對太空艙還有哪些安全限制？",
+        answer: "A：所有乘客需遵守安全帶規範、氣壓調節程序，並全程配合太空艙內的行為準則。",
+    },
+    {
+        question: "Q：航程中如有緊急狀況，該如何應對？",
+        answer: "A：艙內備有緊急氧氣供應與醫療設備，乘客需服從指揮官指示，並按照應變手冊執行標準流程。",
+    },
+    {
+        question: "Q：飲食方面有哪些特別規定？",
+        answer: "A：所有食物皆為太空食品，禁止攜帶個人食品，確保艙內環境穩定。",
+    },
+    {
+        question: "Q：登月期間的行程安排是如何規劃的？",
+        answer: "A：行程包括登月探索、科研活動、模擬太空站生活等，詳細計畫將於行前簡報提供。",
+    },
+    {
+        question: "Q：返航後的適應期需要多久？",
+        answer: "A：依個人體質不同，適應期約為2至4週，Luna將提供全面的健康監測與復健支持。",
+    },
+]
+
+
+// Plan;Dreams --planData
 const planData = [
     {
         img: "Copernicus.jpg",
@@ -286,39 +323,6 @@ const planData = [
 ]
 
 
-
-$(document).ready(function () {
-    planData.forEach((site, i) => {
-        $(`.plancards`).append(`
-         <li data-index="${i}">
-            <a href="Luna Dreams_order.html">
-                <div class="plan_card">
-                    <img src="img/${site.img}" alt="${site.img}">
-                    <div class="plancard_data">
-                        <div class="landing_point">
-                            <h5 class="point">${site.name}${site.latin}</h5>
-                            <h6>${site.summary}</h6>
-                        </div>
-                        <div class="card-meta">
-                            <p><i class="fa-solid fa-user-group"></i>${site.count}</p>
-                            <p><i class="fa-solid fa-calendar-days"></i>${site.date}</p>
-                        </div>
-                    </div>
-                    <h5 class="plan_price point">${site.price}</h5>
-                    <span>立即報名</span>
-                </div>
-            </a>
-        </li>`)
-    });
-
-    const lastCardButton = $(`.plancards li:last-child .plan_card span`);
-    lastCardButton.text('報名額滿');
-    const lastCard = $(`.plancards li:last-child`);
-    lastCard.css('opacity', '0.5');
-    const lastCardlink = $(`.plancards li:last-child a`);
-    lastCardlink.css('cursor', 'default');
-});
-
 // planet
 const planetdata = [
     {
@@ -408,13 +412,9 @@ const planetdata = [
 
 ]
 
+// Plugin --Swiper -> Planet News 
 let isMobileView = null;
 let swiperInstance = null;
-
-$(document).ready(function () {
-    checkScreenWidth();
-    $(window).on('resize', checkScreenWidth);
-});
 
 function checkScreenWidth() {
     const isNowMobile = window.innerWidth <= 1250;
